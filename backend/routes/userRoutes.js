@@ -11,4 +11,14 @@ router.get('/getusers', userController.getUsers);
 // Login
 router.post('/login', userController.login);
 
+// Get all Courses
+router.get('/courses', userController.getAllCourses);
+
+// add courses
+router.post('/addcourses', userController.addCourse);
+
+//deleting a course
+router.delete('/courses/:courseId', userController.deleteCourse);
+
+
 module.exports = router;
